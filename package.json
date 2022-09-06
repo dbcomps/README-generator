@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Generate README file command-line inputs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbcomps/README-generator.git"
+  },
+  "author": "David Barraza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dbcomps/README-generator/issues"
+  },
+  "homepage": "https://github.com/dbcomps/README-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
