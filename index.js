@@ -1,20 +1,21 @@
 const inquirer = require('inquirer');
 const generateReadme = require('./utils/generateMarkdown.js').generateMarkdown;
 const renderBadge = require('./utils/generateMarkdown.js').renderLicenseBadge;
+const renderLicenseTerms = require('./utils/generateMarkdown.js').renderLicenseSection;
 const fs = require('fs');
 const { prompt } = require('inquirer');
 // const a = require('./src/mockData.js');
 
 const answers =	{
 	title: "README Generator",
-	description: "A command line application that uses a series of questions about your GitHub project to generates a README.md file for that project",
-	installInstructions: "Change to directory and glit clone. Then npm install. ",
+	description: "A command line application that uses a series of questions about your GitHub project to generate a professional README.md file for that project",
+	installInstructions: "Change directory you will place this project and git clone. Then npm install. ",
 	useCase: "For consistently generating a professional README.md file for your project",
 	license: "MIT",
 	contributors: "David Barraza",
 	tests: "None",
 	githubUser: "dbcomps",
-	email: "myemail@where.com"
+	email: "myemail@nowhere.com"
 };
 
 const questions = [
@@ -79,8 +80,10 @@ function init() {
 // 	prompt(questions)
 // 	.then((data) => {
 // 		console.log(data);
-// 		writeToFile("./test/README.md", generateMD(data));
+		renderLicenseTerms(answers);
 		renderBadge(answers);
+// 		writeToFile("./dist/README.md", generateMD(data));
+
 		writeToFile("./test/README.md", generateReadme(answers));
 // 	});
 };

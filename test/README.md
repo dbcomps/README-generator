@@ -3,7 +3,7 @@
 
 ## Description
 
-A command line application that uses a series of questions about your GitHub project to generates a README.md file for that project
+A command line application that uses a series of questions about your GitHub project to generate a professional README.md file for that project
 
 ## Table of Contents
 
@@ -11,18 +11,41 @@ A command line application that uses a series of questions about your GitHub pro
 - [Usage](#usage)
 - [License](#license)
 - [Credits](#credits)
+- [Questions](#questions)
 
 ## Installation
-Change to directory and glit clone. Then npm install. 
+Change directory you will place this project and git clone. Then npm install. 
 
 ## Usage
 For consistently generating a professional README.md file for your project
 
 ## License
-MIT
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Credits
 David Barraza
 
 ## Tests
 None
+
+## Questions
+If you have any questions you can contact me at myemail@nowhere.com
+
+You can find my other projects on GitHub at github.com/dbcomps
+
