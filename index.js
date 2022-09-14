@@ -8,7 +8,37 @@ const questions = [
 		type: "input",
 		name: "title",
 		message: "What is the title of the project?"
-	}
+	},
+	{
+		type: "input",
+		name: "description",
+		message: "Provide a short Description of the project."
+	},
+	{
+		type: "input",
+		name: "installInstructoins",
+		message: "Please provide installation instructions."
+	},
+	{
+		type: "input",
+		name: "useCase",
+		message: "What is the use case/purpose of your project?"
+	},
+	{
+		type: "input",
+		name: "licence",
+		message: "What is the licence of your project?"
+	},
+	{
+		type: "input",
+		name: "contributors",
+		message: "Who contributed to the project?"
+	},
+	{
+		type: "input",
+		name: "tests",
+		message: "What tests are part of the project?"
+	},
 ];
 
 // TODO: Create a function to write README file
