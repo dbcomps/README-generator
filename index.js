@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
-const generateMD = require('./utils/generateMarkdown.js');
+const generateReadme = require('./utils/generateMarkdown.js').generateMarkdown;
+const renderBadge = require('./utils/generateMarkdown.js').renderLicenseBadge;
 const fs = require('fs');
 const { prompt } = require('inquirer');
 // const a = require('./src/mockData.js');
@@ -41,7 +42,7 @@ const questions = [
 		type: "list",
 		name: "license",
 		message: "What is the licence of your project?",
-		choices: ["MIT", "GPLv3", "BSD3", "None"]
+		choices: ["Apache 2.0", "BSD 3", "BSD 2", "GPL v3", "GPL v2", "IBM", "MIT", "Mozilla"]
 	},
 	{
 		type: "input",
@@ -79,7 +80,8 @@ function init() {
 // 	.then((data) => {
 // 		console.log(data);
 // 		writeToFile("./test/README.md", generateMD(data));
-		writeToFile("./test/README.md", generateMD(answers));
+		renderBadge(answers);
+		writeToFile("./test/README.md", generateReadme(answers));
 // 	});
 };
 
