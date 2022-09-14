@@ -16,7 +16,7 @@ const questions = [
 	},
 	{
 		type: "input",
-		name: "installInstructoins",
+		name: "installInstructions",
 		message: "Please provide installation instructions."
 	},
 	{
@@ -26,7 +26,7 @@ const questions = [
 	},
 	{
 		type: "input",
-		name: "licence",
+		name: "license",
 		message: "What is the licence of your project?"
 	},
 	{
@@ -42,13 +42,19 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+	fs.writeFile(fileName, data, (err) => {
+		if (err) throw err;
+		console.log('File created!');
+	})
+}
 
 // TODO: Create a function to initialize app
 function init() {
 	prompt(questions)
 	.then((answers) => {
 		console.log(answers);
+		writeToFile("./test/README.md", generateMD(answers));
 	});
 };
 
