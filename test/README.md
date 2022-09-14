@@ -1,4 +1,4 @@
-
+MIT
 # README Generator
 
 ## Description
@@ -11,6 +11,7 @@ A command line application that uses a series of questions about your GitHub pro
 - [Usage](#usage)
 - [License](#license)
 - [Credits](#credits)
+- [Questions](#questions)
 
 ## Installation
 Change to directory and glit clone. Then npm install. 
@@ -19,10 +20,16 @@ Change to directory and glit clone. Then npm install.
 For consistently generating a professional README.md file for your project
 
 ## License
-none
+MIT
 
 ## Credits
 David Barraza
 
 ## Tests
-none
+None
+
+## Questions
+If you have any questions about this project you can reach me at myemail@where.com
+
+See any of my other projects on GitHub at github.com/dbcomps
+
