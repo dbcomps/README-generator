@@ -171,9 +171,9 @@ ${data.contributors}
 ${data.tests}
 
 ## Questions
-If you have any questions you can contact me at ${data.email}
+If you have any questions you can contact me at <${data.email}>
 
-You can find my other projects on GitHub at github.com/${data.githubUser}
+You can find my other projects on GitHub at my [github page](https://github.com/${data.githubUser}).
 
 `;
 }

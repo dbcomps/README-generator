@@ -6,17 +6,17 @@ const fs = require('fs');
 const { prompt } = require('inquirer');
 // const a = require('./src/mockData.js');
 
-const answers =	{
-	title: "README Generator",
-	description: "A command line application that uses a series of questions about your GitHub project to generate a professional README.md file for that project",
-	installInstructions: "Change directory you will place this project and git clone. Then npm install. ",
-	useCase: "For consistently generating a professional README.md file for your project",
-	license: "MIT",
-	contributors: "David Barraza",
-	tests: "None",
-	githubUser: "dbcomps",
-	email: "myemail@nowhere.com"
-};
+// const answers =	{
+// 	title: "README Generator",
+// 	description: "A command line application that uses a series of questions about your GitHub project to generate a professional README.md file for that project",
+// 	installInstructions: "Change directory you will place this project and git clone. Then npm install. ",
+// 	useCase: "For consistently generating a professional README.md file for your project",
+// 	license: "MIT",
+// 	contributors: "David Barraza",
+// 	tests: "None",
+// 	githubUser: "dbcomps",
+// 	email: "myemail@nowhere.com"
+// };
 
 const questions = [
 	{
@@ -77,15 +77,16 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-// 	prompt(questions)
-// 	.then((data) => {
-// 		console.log(data);
-		renderLicenseTerms(answers);
-		renderBadge(answers);
-// 		writeToFile("./dist/README.md", generateMD(data));
-
-		writeToFile("./test/README.md", generateReadme(answers));
-// 	});
+	prompt(questions)
+	.then((data) => {
+		console.log(data);
+		renderLicenseTerms(data);
+		renderBadge(data);
+		writeToFile("./dist/README.md", generateReadme(data));
+//		renderLicenseTerms(answers);
+// 		renderBadge(answers);
+// 		writeToFile("./test/README.md", generateReadme(answers));
+	});
 };
 
 // Function call to initialize app
