@@ -49,3 +49,5 @@ If you have any questions you can contact me at <myemail@nowhere.com>
 
 You can find my other projects on GitHub at my [github page](https://github.com/dbcomps).
 
+## Link
+The link to the walk through [video](https://drive.google.com/file/d/1HHALncpZLb7ZGgoVhjT9y0D61JLlXQTQ/view?usp=sharing).
